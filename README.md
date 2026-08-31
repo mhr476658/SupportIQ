@@ -161,3 +161,10 @@ Frontend application will open at: **`http://127.0.0.1:5173`**
 
 ## 📄 License
 This project is licensed under the MIT License.
+
+
+
+## OUTPUT
+
+
+WhatsApp Video 2026-08-31 at 6.26
