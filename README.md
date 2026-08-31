@@ -11,6 +11,20 @@
 
 ---
 
+## 🎥 Application Output & Demo Video
+
+<div align="center">
+  <video src="docs/demo.mp4" controls="controls" width="100%" style="max-height: 480px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);"></video>
+</div>
+
+> 💡 **Walkthrough Highlights**:
+> - 📥 **2-Pane Support Inbox**: Real-time ticket classification and AI recommended next actions.
+> - 📊 **Statistiques Dashboard**: Dynamic weekly/monthly sentiment and resolution analytics.
+> - 🤖 **Floating AI Copilot Bot**: Instant ticket triage and text classification.
+> - 🛡️ **Admin Portal**: Email OTP / Magic Code authentication, live model retraining, and agent management.
+
+---
+
 ## ✨ Key Features
 
 ### 1. 📥 Streamlined 2-Pane Support Inbox
@@ -62,6 +76,9 @@ support-ticket-fullstack/
 │   │   └── metrics.json              # Model evaluation metrics
 │   ├── train.py             # Model training & validation script
 │   └── requirements.txt     # Python dependencies
+├── docs/
+│   ├── demo.mp4             # Output application walkthrough video
+│   └── TESTING.md           # Testing instructions
 ├── frontend/
 │   ├── src/
 │   │   ├── main.jsx         # Full React application (Inbox, Analytics, Admin, Bot)
