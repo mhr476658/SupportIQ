@@ -682,6 +682,18 @@ def get_audit_logs():
 # ==========================================================================
 # PUBLIC API ENDPOINTS
 # ==========================================================================
+@app.get('/')
+def root():
+    return {
+        'name': 'SupportIQ — AI Ticket Classifier API',
+        'version': '2.3.0',
+        'status': 'Operational',
+        'docs_url': '/docs',
+        'health_url': '/api/health',
+        'stats_url': '/api/stats'
+    }
+
+
 @app.get('/api/health')
 def health():
     return {
