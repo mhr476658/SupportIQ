@@ -11,10 +11,13 @@
 
 ---
 
-## 🎥 Application Output & Demo Video
+## 🎥 Application Output & Live Demo
 
 <div align="center">
-  <video src="docs/demo.mp4" controls="controls" width="100%" style="max-height: 480px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);"></video>
+  <img src="docs/demo.gif" alt="SupportIQ Live Application Demo" width="100%" style="border-radius: 12px; box-shadow: 0 8px 28px rgba(0,0,0,0.25);" />
+  <p align="center">
+    <b><a href="https://github.com/mhr476658/SupportIQ/raw/main/docs/demo.mp4">▶️ Click here to watch / download the full high-resolution MP4 video (3 mins)</a></b>
+  </p>
 </div>
 
 > 💡 **Walkthrough Highlights**:
