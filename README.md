@@ -1,4 +1,4 @@
-# 🚀 Support Ticket Category Classifier & Intelligence Platform
+# 🚀 Support-Ticket Category Classifier
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -7,17 +7,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3%2B-F7931E?logo=scikit-learn)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
----
-
-## 📌 Problem
-Support teams receive a constant stream of incoming customer tickets that need to be routed to the right specialist and prioritized accurately. Doing this manually is slow, error-prone, and inconsistent.
-
-This project builds an explainable, local NLP system that reads the free-text body of a support ticket and:
-1. **Predicts which support category it belongs to** using a TF-IDF + Logistic Regression text classification model.
-2. **Predicts an urgency level (`Low` / `Medium` / `High`)** using transparent keyword rules — no black-box ML, 100% explainable.
-3. **Serves through an enterprise React + FastAPI web application** with an interactive 2-pane inbox, real-time analytics, an AI Copilot Bot, and an Administrator Portal with Email OTP authentication.
-
-> ⚡ **Zero External Cost**: No paid APIs, no GPU required, no cloud inference — everything runs 100% locally.
+> **AI/ML Capstone Project**: An end-to-end NLP system that automatically classifies customer support tickets into relevant categories using TF-IDF with Logistic Regression and assigns explainable Low, Medium, or High urgency levels with real-time predictions.
 
 ---
 
@@ -32,6 +22,41 @@ This project builds an explainable, local NLP system that reads the free-text bo
 
 ---
 
+## 📌 Project Overview & Problem Statement
+
+Support teams receive a constant stream of incoming customer support tickets that need to be routed to the right team and prioritized correctly. Doing this manually is slow and inconsistent.
+
+This project builds a small, explainable NLP system that reads the free-text body of a support ticket and:
+1. **Predicts which support category it belongs to** (a TF-IDF + Logistic Regression text classification model).
+2. **Predicts an urgency level (`Low` / `Medium` / `High`)** using transparent keyword rules — no ML, fully explainable.
+3. **Serves through an enterprise full-stack web application** with an interactive 2-pane inbox, real-time analytics, an AI Copilot Bot, and an Administrator Portal with Email OTP authentication.
+
+> ⚡ **Zero External Cost**: No paid APIs, no GPU required, no cloud inference — everything runs 100% locally.
+
+---
+
+## 📈 Model Performance & Accuracy
+
+Measured on the held-out test split (45 complaints), `random_state=42`:
+
+- **Overall Test Accuracy**: **88.89%** (`0.8889`)
+- **Weighted F1-Score**: **0.8887** (`0.8887`)
+- **Macro Average F1**: **0.8887** (`0.8887`)
+
+### **Category Performance Breakdown:**
+
+| Category | Precision | Recall | F1-Score | Test Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **Account Access** | **87.5%** | **100.0%** | **0.933** | 7 |
+| **Billing** | **87.5%** | **100.0%** | **0.933** | 7 |
+| **Cancellation & Refund** | **100.0%** | **87.5%** | **0.933** | 8 |
+| **Shipping & Delivery** | **87.5%** | **87.5%** | **0.875** | 8 |
+| **Product Issue** | **100.0%** | **75.0%** | **0.857** | 8 |
+| **Technical Issue** | **75.0%** | **85.7%** | **0.800** | 7 |
+| **Weighted Average** | **90.0%** | **88.9%** | **0.889** | 45 |
+
+---
+
 ## 📊 Dataset & Class Distribution
 
 The model is trained on a curated corpus of real support inquiries across 6 distinct categories:
@@ -39,7 +64,7 @@ The model is trained on a curated corpus of real support inquiries across 6 dist
 - **Total Records**: 180 curated ticket samples (`backend/data/support_tickets.csv`)
 - **Text Column**: `text` (customer's free-text problem narrative)
 - **Target Categories (6 balanced classes)**:
-  1. `Billing & Payments` (30 samples) — payment errors, double charges, invoice requests
+  1. `Billing` (30 samples) — payment errors, double charges, invoice inquiries
   2. `Technical Issue` (30 samples) — app crashes, runtime errors, checkout rendering bugs
   3. `Account Access` (30 samples) — 2FA reset, password lockout, security verification
   4. `Shipping & Delivery` (30 samples) — transit delays, carrier tracking, lost packages
@@ -48,12 +73,12 @@ The model is trained on a curated corpus of real support inquiries across 6 dist
 
 ---
 
-## ⚙️ Method
+## ⚙️ Methodology & Pipeline
 
 ```
 Raw Ticket Text 
   └──> Light preprocessing (lowercasing, whitespace normalization)
-        └──> Stratified 75/25 Train/Test Split (random_state=42)
+        └──> Stratified Train/Test Split (random_state=42)
               └──> TF-IDF Vectorizer (unigrams + bigrams, English stop words)
                     └──> Multinomial Logistic Regression (max_iter=1000)
                           └──> Predicted Category (+ confidence via predict_proba)
@@ -66,32 +91,6 @@ Ticket Text
 - **Leakage Prevention**: The TF-IDF vectorizer is fit strictly on the training split, and the fitted vectorizer is serialized to `models/tfidf_vectorizer.joblib` for identical inference during runtime.
 - **Urgency Engine**: An independent rule-based regex module identifying urgent triggers (`urgent`, `asap`, `immediately`, `hacked`, `breached`, `crash`, `unauthorized`) for 100% transparent triage.
 - **Tech Stack**: Python 3.11 · FastAPI · React 18 · Vite · scikit-learn (`TfidfVectorizer`, `LogisticRegression`) · pandas · joblib · Lucide Icons.
-
----
-
-## 📈 Model Performance & Accuracy
-
-Measured on the held-out test split (45 complaints), `random_state=42`:
-
-### **Overall Metrics:**
-- **Test Accuracy**: **88.89%** (`0.8889`)
-- **Weighted F1-Score**: **0.8887** (`0.8887`)
-- **Macro Average F1**: **0.8887** (`0.8887`)
-
-### **Per-Category Performance Breakdown:**
-
-| Category | Precision | Recall | F1-Score | Test Support |
-| :--- | :---: | :---: | :---: | :---: |
-| **Account Access** | **87.5%** | **100.0%** | **0.933** | 7 |
-| **Billing** | **87.5%** | **100.0%** | **0.933** | 7 |
-| **Cancellation & Refund** | **100.0%** | **87.5%** | **0.933** | 8 |
-| **Shipping & Delivery** | **87.5%** | **87.5%** | **0.875** | 8 |
-| **Product Issue** | **100.0%** | **75.0%** | **0.857** | 8 |
-| **Technical Issue** | **75.0%** | **85.7%** | **0.800** | 7 |
-| **Weighted Average** | **90.0%** | **88.9%** | **0.889** | 45 |
-
-- **Top Categories**: `Account Access`, `Billing`, and `Cancellation & Refund` achieve a **0.933 F1-Score**.
-- **Model Storage**: Pre-trained model artifacts are stored in `backend/models/ticket_classifier.joblib` and `backend/models/tfidf_vectorizer.joblib`.
 
 ---
 
@@ -135,7 +134,7 @@ Measured on the held-out test split (45 complaints), `random_state=42`:
 
 ---
 
-## 🚀 How to Run
+## 🚀 Quick Start Guide
 
 ### 1. Start the Backend API
 
