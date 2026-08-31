@@ -1,0 +1,181 @@
+text,category
+I was charged twice for my order,Billing
+My invoice has an incorrect amount,Billing
+I do not recognize this charge on my card,Billing
+I need a copy of my latest invoice,Billing
+The payment amount is wrong,Billing
+My card was charged but the order failed,Billing
+I was billed for a subscription I cancelled,Billing
+Please explain the extra charge on my bill,Billing
+I need help updating my billing details,Billing
+Can you check my payment transaction,Billing
+I paid but the invoice still shows unpaid,Billing
+The tax on my invoice is incorrect,Billing
+Please correct the billing address on my invoice,Billing
+I see a duplicate payment in my account,Billing
+My monthly subscription charge is higher than expected,Billing
+Can I get a receipt for my purchase,Billing
+The payment failed but money was deducted,Billing
+I was charged an unexpected fee,Billing
+Please help me with my invoice,Billing
+My credit card payment is showing twice,Billing
+Why is there a service charge,Billing
+I need to update my payment method,Billing
+My bill contains an item I did not purchase,Billing
+The amount charged does not match the checkout price,Billing
+I need a payment receipt,Billing
+Can you investigate this card charge,Billing
+My subscription was charged after cancellation,Billing
+The invoice total is incorrect,Billing
+I was charged the wrong currency amount,Billing
+Please help resolve my payment issue,Billing
+The mobile app crashes when I open it,Technical Issue
+The website is not loading,Technical Issue
+I get an error when I upload a file,Technical Issue
+The app freezes on the checkout screen,Technical Issue
+Notifications are not working,Technical Issue
+I cannot upload my profile picture,Technical Issue
+The page shows an unexpected error,Technical Issue
+My dashboard is blank,Technical Issue
+The application keeps crashing,Technical Issue
+The search function is not working,Technical Issue
+I cannot download the report,Technical Issue
+The website is very slow,Technical Issue
+I get an error when saving settings,Technical Issue
+The app closes whenever I select an item,Technical Issue
+The button does nothing when I click it,Technical Issue
+The system is showing a server error,Technical Issue
+I cannot open the latest update,Technical Issue
+The login page keeps refreshing,Technical Issue
+The checkout page is broken,Technical Issue
+My browser displays a technical error,Technical Issue
+The app stopped working after the update,Technical Issue
+I cannot attach a document,Technical Issue
+The screen is stuck loading,Technical Issue
+The product page will not open,Technical Issue
+The website gives me an error message,Technical Issue
+I am unable to upload documents,Technical Issue
+The application is not responding,Technical Issue
+My notifications stopped appearing,Technical Issue
+The system has a technical problem,Technical Issue
+The website has a software bug,Technical Issue
+I forgot my password and cannot log in,Account Access
+I cannot access my account,Account Access
+My login credentials are not working,Account Access
+I need to reset my password,Account Access
+My account is locked,Account Access
+I cannot sign into the mobile app,Account Access
+I forgot the email used for my account,Account Access
+Please help me recover my account,Account Access
+The verification code is not arriving,Account Access
+I am unable to complete account verification,Account Access
+My login keeps failing,Account Access
+I need to change my account email,Account Access
+I cannot access my profile,Account Access
+My password reset link expired,Account Access
+My account was locked after several attempts,Account Access
+I am not receiving the login OTP,Account Access
+How do I unlock my account,Account Access
+I lost access to my registered phone,Account Access
+Please help me update my login details,Account Access
+I cannot verify my identity,Account Access
+The sign in page rejects my password,Account Access
+I need account recovery assistance,Account Access
+My verification code is invalid,Account Access
+I am having trouble logging into my account,Account Access
+Can you help me regain access,Account Access
+My account login is blocked,Account Access
+I cannot receive the password reset email,Account Access
+I need to change my registered phone number,Account Access
+My account access is not working,Account Access
+Please unlock my profile,Account Access
+Where is my package,Shipping & Delivery
+My order has not arrived yet,Shipping & Delivery
+My delivery is delayed,Shipping & Delivery
+When will my order be delivered,Shipping & Delivery
+The tracking information has not updated,Shipping & Delivery
+My package is stuck in transit,Shipping & Delivery
+I received a delivery delay notification,Shipping & Delivery
+My shipment has not moved for three days,Shipping & Delivery
+Can you check my tracking status,Shipping & Delivery
+The courier has not delivered my order,Shipping & Delivery
+My package was supposed to arrive yesterday,Shipping & Delivery
+I need an update on my shipment,Shipping & Delivery
+The tracking number is not showing movement,Shipping & Delivery
+My delivery date has passed,Shipping & Delivery
+Where can I find my parcel,Shipping & Delivery
+My order is still in transit,Shipping & Delivery
+The shipment is delayed,Shipping & Delivery
+Please check the delivery status,Shipping & Delivery
+My package has not arrived,Shipping & Delivery
+Can I get the latest tracking update,Shipping & Delivery
+The courier says delivered but I did not receive it,Shipping & Delivery
+My parcel is missing,Shipping & Delivery
+Why is my order taking so long,Shipping & Delivery
+The delivery estimate is incorrect,Shipping & Delivery
+My shipment is delayed by several days,Shipping & Delivery
+Please investigate my missing delivery,Shipping & Delivery
+I need help tracking my package,Shipping & Delivery
+The courier has not contacted me,Shipping & Delivery
+My order delivery is late,Shipping & Delivery
+Can you tell me where my shipment is,Shipping & Delivery
+The product I received is damaged,Product Issue
+The item is defective,Product Issue
+The product does not work,Product Issue
+I received the wrong product,Product Issue
+The item is missing a part,Product Issue
+The product quality is poor,Product Issue
+My device stopped working,Product Issue
+The item arrived broken,Product Issue
+The product has a manufacturing defect,Product Issue
+I received a different color than ordered,Product Issue
+The product is damaged out of the box,Product Issue
+One component is missing from my package,Product Issue
+The item is not as described,Product Issue
+The product stopped working after one day,Product Issue
+I received the wrong size,Product Issue
+The device will not turn on,Product Issue
+The product has scratches,Product Issue
+The item appears faulty,Product Issue
+I need help with a defective product,Product Issue
+The product is not functioning correctly,Product Issue
+An accessory is missing from the box,Product Issue
+The item I received is incorrect,Product Issue
+The product arrived with damage,Product Issue
+The device has a technical defect,Product Issue
+The product does not match the listing,Product Issue
+I need a replacement for a damaged item,Product Issue
+The item is broken,Product Issue
+The product quality is not acceptable,Product Issue
+I received a faulty item,Product Issue
+The product is damaged and unusable,Product Issue
+I want to cancel my order,Cancellation & Refund
+Please cancel my subscription,Cancellation & Refund
+I need a refund for my purchase,Cancellation & Refund
+How can I request a refund,Cancellation & Refund
+I want to return this order,Cancellation & Refund
+Please cancel the order before it ships,Cancellation & Refund
+I changed my mind and want a refund,Cancellation & Refund
+Can I get my money back,Cancellation & Refund
+I need to return an item,Cancellation & Refund
+Please process my refund,Cancellation & Refund
+How long does a refund take,Cancellation & Refund
+I want to cancel my subscription today,Cancellation & Refund
+I no longer need this product and want to return it,Cancellation & Refund
+Can you help me with a return,Cancellation & Refund
+My refund has not arrived,Cancellation & Refund
+I requested a refund but have not received it,Cancellation & Refund
+I want to cancel my purchase,Cancellation & Refund
+Please tell me the refund policy,Cancellation & Refund
+Can I return this item for a refund,Cancellation & Refund
+I need to stop my order,Cancellation & Refund
+How do I cancel an order,Cancellation & Refund
+I want my payment refunded,Cancellation & Refund
+Please help me return my product,Cancellation & Refund
+The refund is taking too long,Cancellation & Refund
+I need to cancel before delivery,Cancellation & Refund
+I would like to request a refund,Cancellation & Refund
+Can my order be cancelled,Cancellation & Refund
+Please refund my cancelled order,Cancellation & Refund
+I want to return the product and get my money back,Cancellation & Refund
+Help me cancel this purchase,Cancellation & Refund
